@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/bootstrap/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="@ViewBag.Css" />
+        <link href="https://fonts.googleapis.com/css?family=Alegreya:400,700,700i|Inknut+Antiqua:600|Slabo+27px"
+              rel="stylesheet" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/css/bootstrap/bootstrap.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="@ViewBag.Css" />
+        <link href="https://fonts.googleapis.com/css?family=Alegreya:400,700,700i|Inknut+Antiqua:600|Slabo+27px"
+              rel="stylesheet">
+    </environment>
+</head>
+<body>
+
+    @RenderBody()
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="no-list-style">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="no-list-style">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">The Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="no-list-style">
+                        <li><a href="#">Software Collection</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <environment names="Development">
+        <script src="~/js/jquery-3.1.1.min.js"></script>
+        <script src="~/js/angular.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/app.module.js"></script>
+        <script src="~/js/products.controller.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/jquery-3.1.1.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/app.module.js"></script>
+        <script src="~/js/products.controller.js"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

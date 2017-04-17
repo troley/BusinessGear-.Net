@@ -1,0 +1,10 @@
+C:\Users\Troley\Documents\Visual Studio 2017\Projects\BusinessGear\src\BusinessGear\bin\Debug\netcoreapp1.0\BusinessGear.deps.json
+C:\Users\Troley\Documents\Visual Studio 2017\Projects\BusinessGear\src\BusinessGear\bin\Debug\netcoreapp1.0\BusinessGear.runtimeconfig.json
+C:\Users\Troley\Documents\Visual Studio 2017\Projects\BusinessGear\src\BusinessGear\bin\Debug\netcoreapp1.0\BusinessGear.runtimeconfig.dev.json
+C:\Users\Troley\Documents\Visual Studio 2017\Projects\BusinessGear\src\BusinessGear\bin\Debug\netcoreapp1.0\BusinessGear.dll
+C:\Users\Troley\Documents\Visual Studio 2017\Projects\BusinessGear\src\BusinessGear\bin\Debug\netcoreapp1.0\BusinessGear.pdb
+C:\Users\Troley\Documents\Visual Studio 2017\Projects\BusinessGear\src\BusinessGear\obj\Debug\netcoreapp1.0\BusinessGear.csprojResolveAssemblyReference.cache
+C:\Users\Troley\Documents\Visual Studio 2017\Projects\BusinessGear\src\BusinessGear\obj\Debug\netcoreapp1.0\BusinessGear.AssemblyInfo.cs
+C:\Users\Troley\Documents\Visual Studio 2017\Projects\BusinessGear\src\BusinessGear\obj\Debug\netcoreapp1.0\BusinessGear.dll
+C:\Users\Troley\Documents\Visual Studio 2017\Projects\BusinessGear\src\BusinessGear\obj\Debug\netcoreapp1.0\BusinessGear.pdb
+C:\Users\Troley\Documents\Visual Studio 2017\Projects\BusinessGear\src\BusinessGear\obj\Debug\netcoreapp1.0\UserSecretsAssemblyInfo.cs

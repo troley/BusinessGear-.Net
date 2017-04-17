@@ -1,0 +1,45 @@
+﻿@model LoginViewModel
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
+    ViewData["Title"] = "Log in";
+    ViewBag.Css = "/css/collection.css";
+    Layout = "_Layout";
+}
+
+<header class="container-fluid">
+    <div>
+        @Html.Partial("HeaderBrandPartial")
+    </div>
+</header>
+
+<div class="container body-container">
+    <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+            <section>
+                <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+                    <h1>Log in</h1>
+                    <hr/>
+                    <!--<div asp-validation-summary="All" class="text-danger"></div>-->
+                    <div class="col-md-12 input-space">
+                        <input class="default-bg-field" asp-for="Username" placeholder="Username"/>
+                        <br/>
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-12 input-space">
+                        <input class="default-bg-field" asp-for="Password" placeholder="Password"/>
+                        <br/>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-12 input-space">
+                        <input id="logInSubmit" type="submit" value="Log in"/>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <div class="push"></div>
+</div>
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

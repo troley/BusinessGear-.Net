@@ -1,0 +1,704 @@
+﻿* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #ded9d6;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.default-a:hover {
+    text-decoration: underline;
+    color: #337ab7;
+}
+
+.text-danger {
+    font-size: 16px;
+    font-weight: bold;
+    color: darkred;
+}
+
+.brand h1 {
+    font-family: 'Alegreya', serif;
+    font-style: italic;
+    font-size: 40px;
+    color: white;
+}
+
+.brand h1 sup {
+    top: -0.4em;
+}
+
+.brand h1 i {
+    font-size: 12px;
+}
+
+.container.body-container {
+    min-height: 100%;
+    margin-bottom: -88px;
+}
+
+header, .body-container {
+    background-color: white;
+}
+
+header {
+    height: 500px;
+    background-image: url(http://baseline-consulting.se/images/content/projects/sonyericsson1326x647.jpg);
+    background-size: 100% 100%;
+}
+
+.no-list-style {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-split {
+    font-family: 'Inknut Antiqua', serif;
+    text-align: center;
+    width: 100%;
+    margin: 130px 0 0 0;
+}
+
+.section-split hr {
+    margin-top: -32px;
+    border-top: 2px solid black;
+}
+
+.section-split span {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: white;
+    color: #333333;
+    padding: 0 15px 0 15px;
+}
+
+.welcome-header {
+    font-family: 'Inknut Antiqua', serif;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 60px;
+    color: white;
+}
+
+.top-body-row {
+    margin-top: 50px;
+}
+
+.gray-wrapper-row {
+    background-color: rgba(154, 151, 150, 0.13);
+    margin-top: 24px;
+    padding-top: 35px;
+}
+
+.let-us-know h2 {
+    margin-top: 0;
+    padding-top: 15px;
+    font-family: 'Inknut Antiqua', serif;
+    text-align: center;
+    color: white;
+}
+
+.default-bg-field {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    height: 45px;
+    width: 230px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.input-space {
+    margin-bottom: 20px;
+}
+
+#logInSubmit {
+    border: none;
+    border-radius: 5px;
+    background-color: #515a5f;
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    height: 45px;
+}
+
+#interestForm .form-inputs {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#interestEmail {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    height: 45px;
+    width: 230px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+#interestSubmit {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #515a5f;
+    color: white;
+    height: 45px;
+    width: 120px;
+    margin-left: -4px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#logInSubmit:hover,
+#interestSubmit:hover {
+    background-color: black;
+}
+
+.row-margins {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.breadcrumbs {
+    margin: 10px 0 0 15px;
+}
+
+.breadcrumbs > *,
+.breadcrumbs > *:hover {
+    color: #3500ff;
+}
+
+.breadcrumbs span,
+.breadcrumbs span:hover {
+    color: #9c9b9b;
+    border-bottom: 1px solid #9c9b9b;
+}
+
+.panels-wrapper {
+    margin-left: 5.5%;
+}
+
+.panel,
+.showcase-panel {
+    font-family: 'Slabo 27px', serif;
+    width: 270px;
+}
+
+.panel-title {
+    background-color: white;
+    padding: 10px 7px 10px 0;
+    border-radius: 9px 9px 0 0;
+    text-align: center;
+    font-size: 19px;
+}
+
+.panel-image-title h3 {
+    margin-top: 5px !important;
+}
+
+.panel-body {
+    border-top: none;
+    border-radius: 0 0 9px 9px;
+    padding: 5px;
+    font-size: 16.5px;
+    text-align: center;
+}
+
+.full-collection {
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    margin: 30px 20px 0 0;
+}
+
+.push {
+    height: 88px;
+}
+
+.appointment-steps .img-panel {
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+    padding: 0 12px 0 12px;
+    position: absolute;
+    background-color: #f3f2f1;
+    border: 2px solid #a1a09f;
+    border-radius: 7px;
+    width: 250px;
+    height: 190px;
+    top: 350px;
+    right: 120px;
+    z-index: 11;
+}
+
+.appointment-steps .big-img img {
+    width: 500px;
+    height: 450px;
+    z-index: 10
+}
+
+.step-by-step li {
+    font-size: 20px;
+    margin-bottom: 35px;
+    opacity: 0.4;
+}
+
+.step-by-step .big-round-num {
+    font-size: 32px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 50%;
+    background-color: #b4b1b0;
+    color: #6f706e;
+    opacity: 0.6;
+    margin-right: 15px;
+}
+
+.step-by-step .clickable {
+    cursor: pointer;
+}
+
+.big-round-num.active-item {
+    background-color: #646160;
+    color: white;
+    opacity: 1;
+}
+
+.step-by-step li.active-item {
+    color: #646160;
+    opacity: 1;
+}
+
+.about-us .portrait {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.about-us .portrait-img img {
+    width: 250px;
+    height: 250px;
+    float: right;
+    border: 4px solid lightgray;
+    border-radius: 50%;
+}
+
+.about-us .portrait-description p {
+    font-family: 'Slabo 27px', serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.about-us .portrait-img.reverse img {
+    float: left;
+}
+
+.about-us .portrait-description.reverse p {
+    text-align: right;
+}
+
+footer {
+    background-color: #ded9d6;
+    min-height: 88px;
+    font-size: 17px;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer a:hover {
+    color: black;
+}
+
+/* HOVER IMG IN SHOWCASE */
+@media (min-width: 991px) {
+
+    .showcase .panel:hover img {
+        position: absolute;
+        border: 3px solid rgba(154, 151, 150, 0.15);
+        border-bottom: none;
+        border-radius: 9px 9px 0 0;
+        width: 320px;
+        height: 320px;
+        left: -8px;
+        z-index: 1;
+    }
+
+    .showcase .panel:hover .panel-image-title {
+        background-color: white;
+        position: absolute;
+        border: 3px solid rgba(154, 151, 150, 0.15);
+        border-top: none;
+        border-radius: 0 0 9px 9px;
+        top: 320px;
+        width: 320px;
+        left: -8px;
+        z-index: 1;
+    }
+
+    .showcase .panel:hover #productPrice {
+        display: initial !important;
+    }
+}
+
+/* HOVER IMG IN SHOWCASE */
+
+@media all and (max-width: 1200px) {
+    .panels-wrapper {
+        margin-left: 2%;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .panels-wrapper {
+        margin-left: 0;
+    }
+
+    .panel {
+        margin: 0 auto 25px auto;
+    }
+
+    .expectations .panel {
+        width: 100%;
+    }
+
+    .full-collection {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .appointment-steps .big-img img {
+        width: inherit !important;
+    }
+
+    .appointment-steps .big-img .img-panel {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .step-by-step {
+        margin-top: 140px;
+    }
+
+    .step-by-step ol {
+        text-align: center;
+    }
+
+    .step-by-step .big-round-num {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-us .portrait .before {
+        order: 1;
+    }
+
+    .about-us .portrait .after {
+        order: 2;
+        text-align: center;
+    }
+
+    .about-us .portrait-img img,
+    .about-us .portrait-img.reverse img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-us .portrait-description p,
+    .about-us .portrait-description.reverse p {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 10px;
+    }
+
+    .no-list-style {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .section-split span {
+        font-size: 16px;
+    }
+
+    .section-split hr {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 515px) {
+    .brand {
+        text-align: center;
+    }
+
+    header {
+        height: 550px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 377px) {
+    header {
+        height: 680px;
+    }
+
+    .form-inputs {
+        width: 100% !important;
+    }
+
+    #interestEmail {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #interestSubmit {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        margin-left: 0.5px;
+
+    }
+
+    .section-split span {
+        font-size: 15px;
+    }
+
+    .section-split hr {
+        margin-top: -28px;
+    }
+}
+
+/* COL OFFSET RIGHT SIDE */
+.col-xs-offset-right-12 {
+    margin-right: 100%;
+}
+
+.col-xs-offset-right-11 {
+    margin-right: 91.66666667%;
+}
+
+.col-xs-offset-right-10 {
+    margin-right: 83.33333333%;
+}
+
+.col-xs-offset-right-9 {
+    margin-right: 75%;
+}
+
+.col-xs-offset-right-8 {
+    margin-right: 66.66666667%;
+}
+
+.col-xs-offset-right-7 {
+    margin-right: 58.33333333%;
+}
+
+.col-xs-offset-right-6 {
+    margin-right: 50%;
+}
+
+.col-xs-offset-right-5 {
+    margin-right: 41.66666667%;
+}
+
+.col-xs-offset-right-4 {
+    margin-right: 33.33333333%;
+}
+
+.col-xs-offset-right-3 {
+    margin-right: 25%;
+}
+
+.col-xs-offset-right-2 {
+    margin-right: 16.66666667%;
+}
+
+.col-xs-offset-right-1 {
+    margin-right: 8.33333333%;
+}
+
+.col-xs-offset-right-0 {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .col-sm-offset-right-12 {
+        margin-right: 100%;
+    }
+
+    .col-sm-offset-right-11 {
+        margin-right: 91.66666667%;
+    }
+
+    .col-sm-offset-right-10 {
+        margin-right: 83.33333333%;
+    }
+
+    .col-sm-offset-right-9 {
+        margin-right: 75%;
+    }
+
+    .col-sm-offset-right-8 {
+        margin-right: 66.66666667%;
+    }
+
+    .col-sm-offset-right-7 {
+        margin-right: 58.33333333%;
+    }
+
+    .col-sm-offset-right-6 {
+        margin-right: 50%;
+    }
+
+    .col-sm-offset-right-5 {
+        margin-right: 41.66666667%;
+    }
+
+    .col-sm-offset-right-4 {
+        margin-right: 33.33333333%;
+    }
+
+    .col-sm-offset-right-3 {
+        margin-right: 25%;
+    }
+
+    .col-sm-offset-right-2 {
+        margin-right: 16.66666667%;
+    }
+
+    .col-sm-offset-right-1 {
+        margin-right: 8.33333333%;
+    }
+
+    .col-sm-offset-right-0 {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-offset-right-12 {
+        margin-right: 100%;
+    }
+
+    .col-md-offset-right-11 {
+        margin-right: 91.66666667%;
+    }
+
+    .col-md-offset-right-10 {
+        margin-right: 83.33333333%;
+    }
+
+    .col-md-offset-right-9 {
+        margin-right: 75%;
+    }
+
+    .col-md-offset-right-8 {
+        margin-right: 66.66666667%;
+    }
+
+    .col-md-offset-right-7 {
+        margin-right: 58.33333333%;
+    }
+
+    .col-md-offset-right-6 {
+        margin-right: 50%;
+    }
+
+    .col-md-offset-right-5 {
+        margin-right: 41.66666667%;
+    }
+
+    .col-md-offset-right-4 {
+        margin-right: 33.33333333%;
+    }
+
+    .col-md-offset-right-3 {
+        margin-right: 25%;
+    }
+
+    .col-md-offset-right-2 {
+        margin-right: 16.66666667%;
+    }
+
+    .col-md-offset-right-1 {
+        margin-right: 8.33333333%;
+    }
+
+    .col-md-offset-right-0 {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-offset-right-12 {
+        margin-right: 100%;
+    }
+
+    .col-lg-offset-right-11 {
+        margin-right: 91.66666667%;
+    }
+
+    .col-lg-offset-right-10 {
+        margin-right: 83.33333333%;
+    }
+
+    .col-lg-offset-right-9 {
+        margin-right: 75%;
+    }
+
+    .col-lg-offset-right-8 {
+        margin-right: 66.66666667%;
+    }
+
+    .col-lg-offset-right-7 {
+        margin-right: 58.33333333%;
+    }
+
+    .col-lg-offset-right-6 {
+        margin-right: 50%;
+    }
+
+    .col-lg-offset-right-5 {
+        margin-right: 41.66666667%;
+    }
+
+    .col-lg-offset-right-4 {
+        margin-right: 33.33333333%;
+    }
+
+    .col-lg-offset-right-3 {
+        margin-right: 25%;
+    }
+
+    .col-lg-offset-right-2 {
+        margin-right: 16.66666667%;
+    }
+
+    .col-lg-offset-right-1 {
+        margin-right: 8.33333333%;
+    }
+
+    .col-lg-offset-right-0 {
+        margin-right: 0;
+    }
+}
+
+/* COL OFFSET RIGHT SIDE */

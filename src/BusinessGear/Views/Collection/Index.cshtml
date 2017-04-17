@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Collection";
+    ViewBag.Css = "/css/collection.css";
+    Layout = "_Layout";
+}
+
+<div ng-app="app" ng-controller="ProductsController as vm">
+    <header class="container">
+        @Html.Partial("HeaderBrandPartial")
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="filter-collection">
+                    <input ng-click="vm.getAll()" class="filter-button" type="button" value="All">
+                    <input ng-click="vm.getFiltered(4)" class="filter-button" type="button" value="Development (9)">
+                    <input ng-click="vm.getFiltered(1)" class="filter-button" type="button" value="Administration (4)">
+                    <input ng-click="vm.getFiltered(3)" class="filter-button" type="button" value="Management (12)">
+                    <input ng-click="vm.getFiltered(2)" class="filter-button" type="button" value="Hardware (6)">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="showcase">
+        <div class="container body-container">
+            <div class="breadcrumbs">
+                <a asp-controller="Home" asp-action="Index">Home&ensp;<i class="fa fa-angle-double-right"></i></a>
+                <span>Collection</span>
+            </div>
+            <div class="section-split" style="margin: 80px 0;">
+                <div class="section-text">
+                    <h2>
+                        <span>Collection</span>
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+            <div ng-repeat="n in vm.range(1, (vm.products.length / 3) + vm.extra) | limitTo: 2">
+                <div class="row" style="height: 255.38px;">
+                    <div class="panels-wrapper">
+                        <div ng-repeat="product in vm.products.slice((n - 1) * 3, n * 3)">
+                            <div class="col-md-4">
+                                <div class="panel">
+                                    <a href="/collection/productdetail/{{ product.id }}">
+                                        <div class="panel-image">
+                                            <img class="img-responsive" src="http://lorempixel.com/270/211"
+                                                 alt="Lorem Ipsum">
+                                        </div>
+                                        <div class="panel-image-title">
+                                            <div class="col-md-6">
+                                                <h3>{{ product.name }}</h3>
+                                            </div>
+                                            <div id="productPrice" class="col-md-6" style="display: none; text-align: right;">
+                                                <h3> &euro; {{ product.price }} </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="push"></div>
+        </div>
+    </section>
+</div>
