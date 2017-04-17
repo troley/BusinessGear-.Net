@@ -1,0 +1,12 @@
+﻿@import "collection.css";
+
+
+header {
+    height: 125px;
+}
+
+.crud-table th, .crud-table td {
+    border: 2px solid black;
+    width: 250px ;
+    text-align: center;
+}
