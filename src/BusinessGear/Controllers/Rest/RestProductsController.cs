@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BusinessGear.Data;
 using BusinessGear.Models;
+using BusinessGear.Models.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,43 +16,48 @@ namespace BusinessGear.Controllers.Rest
     [Route("api/products")]
     public class RestProductsController : Controller
     {
-        private readonly ApplicationDbContext _context;
 
-        public RestProductsController(ApplicationDbContext context)
+        private readonly IProductRepository _productRepo;
+
+        public RestProductsController(IProductRepository productRepository)
         {
-            _context = context;
+            _productRepo = productRepository;
         }
 
-        // GET api/Products
+        // GET api/products
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public IEnumerable<Product> GetAllProducts()
         {
-            var allProducts = _context.Products.AsEnumerable();
-            return allProducts;
+            return _productRepo.GetAll();
         }
 
-        // GET api/Products/5
         [HttpGet("{id}")]
-        public IEnumerable<Product> Get(int id)
+        public Product GetProductById(int id)
         {
-            var productById = _context.Products.Where(p => p.Category.Id == id);
-            return productById;
+            return _productRepo.Find(id);
         }
 
-        // POST api/Products
+        // GET api/products/category/5
+        [HttpGet("category/{id}")]
+        public IEnumerable<Product> GetProductsByCategoryId(int id)
+        {
+            return _productRepo.FindAllByCategoryId(id);
+        }
+
+        // POST api/products
         [HttpPost]
         public void Post([FromBody]string value)
         {
 
         }
 
-        // PUT api/Products/5
+        // PUT api/products/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/Products/5
+        // DELETE api/products/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

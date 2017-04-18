@@ -6,6 +6,8 @@
 
 html, body {
     background-color: #ded9d6;
+    height: 100%;
+    min-height: 100%;
 }
 
 a, a:hover {

@@ -25,6 +25,7 @@ $(document).ready(function () {
         }
         oldActiveItem = activeItem;
     });
+
 });
 
 function howItWorksItems(litem, appendable) {

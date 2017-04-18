@@ -6,13 +6,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MySQL.Data.EntityFrameworkCore.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using BusinessGear.Data;
 using BusinessGear.Models;
+using BusinessGear.Models.Repositories;
 using BusinessGear.Services;
+using MySQL.Data.EntityFrameworkCore.Extensions;
 
 namespace BusinessGear
 {
@@ -51,6 +52,8 @@ namespace BusinessGear
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
+
+            services.AddScoped<IProductRepository, ProductRepository>();
 
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();

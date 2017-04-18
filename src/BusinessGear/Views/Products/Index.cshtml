@@ -12,16 +12,19 @@
     </div>
 </header>
 
-<section class="container body-container">
-    <h2>Index</h2>
-    
+<div class="container body-container">
+    @Html.Partial("CrudNavbarPartial")
+    <hr style="margin-top: 0; border-width: 2px;"/>
+
+    <h2>Products</h2>
+
     <p>
         <a class="default-a" asp-action="Create">Create New</a>
     </p>
     <table class="crud-table">
         <thead>
         <tr>
-            <th>
+            <th class="first">
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
@@ -30,7 +33,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th>
+            <th class="last">
                 Options
             </th>
         </tr>
@@ -48,7 +51,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Description)
                 </td>
-                <td>
+                <td class="last">
                     <a class="default-a" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                     <a class="default-a" asp-action="Details" asp-route-id="@item.Id">Details</a> |
                     <a class="default-a" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
@@ -58,4 +61,4 @@
         </tbody>
     </table>
     <div class="push"></div>
-</section>
+</div>

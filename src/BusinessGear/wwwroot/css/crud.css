@@ -1,12 +1,49 @@
 ﻿@import "collection.css";
 
-
 header {
     height: 125px;
 }
 
-.crud-table th, .crud-table td {
-    border: 2px solid black;
-    width: 250px ;
+.crud-nav .items-wrapper > * {
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    font-size: 18px;
     text-align: center;
+}
+
+.crud-nav .menu-item {
+    width: 100px;
+}
+
+.crud-nav .menu-item a:hover {
+    color: #0f09ec;
+}
+
+.active-nav-item {
+    background-color: #cacaca
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+}
+
+.crud-table th {
+    border-left: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    border-top: 2px solid lightgray;
+    width: 250px;
+    height: 40px;
+    min-height: 50px;
+    text-align: center;
+}
+
+.crud-table td {
+    border-left: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+
+.crud-table .last {
+    border-right: 2px solid lightgray;
 }

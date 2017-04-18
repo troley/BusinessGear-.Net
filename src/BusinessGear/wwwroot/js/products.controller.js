@@ -37,7 +37,7 @@
         }
 
         function getFiltered(id) {
-            var url = '/api/products/' + id;
+            var url = '/api/products/category/' + id;
             var productsPromise = $http.get(url);
             productsPromise.then(function (response) {
                 vm.products = response.data;
